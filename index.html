@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Guessing Game</title>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="./bootstrap/js/npm.js"></script>
+	<script src="js.js"></script>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<body class="myBody">
+
+<nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse" role="navigation">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav">
+			<li>
+				<img src="./images/motive-logo-web.png" class="navbar-brand" style="background-color:white; border-radius:5px; margin-top:20px; margin-left:20px;">
+			</li>
+			<li class="dropdown" class="btn btn-primary navbar-right navbar-btn" style="margin-left: 20px; margin-top:20px; max-height:80%">
+				<button id="motiveLabs" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn navbar-btn btn-primary dropdown-toggle navbar-right" data-target="#">
+					Another Motive Labs Project
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="motiveLabs">
+					<li><a href="#">Guessing Game</a></li>
+					<li><a href="http://thisismotive.com">Motive Accelerator</a></li>
+					<li><a href="http://realtechcities.com">RealTech</a></li>
+					<li><a href="http://startupfamilies.org">Startup Families Podcast</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="nav navbar-left navbar-text" style="padding-left:20px; padding-top:20px;">Made with love in </span>
+				<a href="http://launchedindfw.com/" class="nav navbar-left">
+	    			<img src="http://launchedindfw.com/l.php?img=c&check=true" style="width:30px;height:auto; margin-top: 10px; max-height:80%">
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container-fluid">
+	<div class="jumbotron" style="max-width: 800px; margin-left: auto; margin-right: auto; margin-top: 75px; margin-bottom:300px;">
+		<img src="images/logo" style="width:60%; margin-left:20%; margin-right: 20%;">
+		<hr>
+		<h1>Guess the number that could change your life.</h1>
+		<h2>For millenia, people have believed that numbers have metaphysical attributes. As St. Augustine of Hippo said in the fourth century, "Numbers are the Universal language offered by the deity to humans as confirmation of the truth."</h2>
+		<button class="btn btn-success" aria-controls="guessing-game" data-target="#guessing-game" aria-expanded="false" data-toggle="collapse" >Get started now!</button>
+		<button class="btn btn-primary" aria-controls="numerologyInfo" data-target="#numerologyInfo" aria-expanded="false" data-toggle="collapse" >Learn more about numerology</button>
+
+
+		<button href="#" class="btn btn-primary">Get a Hint</button>
+		<div class="collapse" id="guessing-game">
+			<div class="well">
+				<div class="container main-content">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Guess your Life Number</h1>
+							<form>
+								<fieldset class="form-group">
+									<label>What do you think your Life Number is?</label>
+									<input type="number" class="form-control" id="guessInput" placeholder="for example, 25, 75, 33?">
+									<small>Guess any number from 1 to 100</small>
+								</fieldset>
+								<button type="submit" class="btn btn-primary">Submit Your Answer</button>
+							</form>
+						</div>
+						<div class="help-me col-md-4">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="collapse" id="numerologyInfo">
+			<div class="well">
+				<div class="row">
+					<div class="col-md-6 ">
+						<img src="http://45.media.tumblr.com/fe2a50216b0ba38764a4f2045ef7c822/tumblr_mteejvVdU31s9jjn1o1_400.gif" class="img-rounded img-responsive">
+
+					</div>
+					<div class="col-md-6 container">
+						<ul class="nav nav-tabs">
+						  <li class="active"><a  data-toggle="tab" href="#motivity">Motivity</a></li>
+						  <li><a data-toggle="tab" href="#numbers">Numbers</a></li>
+						  <li><a data-toggle="tab" href="#history">History</a></li>
+						</ul>
+						<div class="tab-content">
+						  <div class="tab-pane fade in active" id="motivity">
+						  	<p>Through the special power of Motivity, we've determined your life number: the special, unique number that corresponds to your <strong>UNIVERSAL GEOMETRY</strong>. But it cannot be shared. It must be guessed. Now close your eyes. Envision it.</p>
+						  </div>
+						  <div class="tab-pane fade" id="numbers">
+						  		<table class="table">
+						  			<thead>
+						  				<tr>
+						  					<th>Number</th>
+						  					<th>Meaning</th>
+						  				</tr>
+						  			</thead>
+						  			<tbody>
+						  				<tr>
+						  					<td>1</td>
+						  					<td>Unity</td>
+						  				</tr>
+						  				<tr>
+						  					<td>2</td>
+						  					<td>Witness</td>
+						  				</tr>
+						  				<tr>
+						  					<td>3</td>
+						  					<td>Divine Perfection</td>
+						  				</tr>
+						  				<tr>
+						  					<td>5</td>
+						  					<td>Grace</td>
+						  				</tr>
+						  				<tr>
+						  					<td>7</td>
+						  					<td>Completeness</td>
+						  				</tr>
+						  				<tr>
+						  					<td>8</td>
+						  					<td>New Life</td>
+						  				</tr>
+						  				<tr>
+						  					<td>12</td>
+						  					<td>Authority</td>
+						  				</tr>
+						  				<tr>
+						  					<td>1,000</td>
+						  					<td>Immensity</td>
+						  				</tr>
+
+
+						  			</tbody>
+    							</table>
+						  </div>
+						  <div class="tab-pane fade" id="history">Egypt and Babylon are recognized as the earliest recorded history of numerology by the majority of numerologists. It was here that the Chaldean system was developed under the influence of the Hebrews. There is also evidence of the use of numerology thousands of years ago in China, Rome, Japan and Greece. The credit for modern numerology is most often given to the Greek philosopher <a target="_blank" href="https://en.wikipedia.org/wiki/Pythagoras" data-toggle="tooltip" data-placement="top" title="Learn more about Pythagoras">Pythagoras</a>.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<hr>
+
+		<h2>You have <span>five</span> guesses.</h2>
+		<button href="#" class="btn btn-warning">Reset your life number.</button>
+
+
+
+	</div >
+</div >
+
+
+
+</body>
+
+
+
+</html>
+
+
+
