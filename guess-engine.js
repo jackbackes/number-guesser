@@ -115,8 +115,8 @@ function sendPlayerMessage(message) {
 };
 
 function resetMessageBox() {
-	$('.overlay').removeClass('win');
-	$('.overlay').removeClass('lose');
+	//$('.overlay').removeClass('win');
+	//$('.overlay').removeClass('lose');
 }
 
 function validateForm(element, compareArray) {
@@ -188,6 +188,7 @@ function play(){
 					let checkAnswer = checkGuess(playerGuess, submitEvent.data.winningNum, startEvent.data.guessCounter);
 					let formIsValid = validateForm(playerGuess, guessHistory);
 					unbindHints();
+					submitEvent.preventDefault();
 
 					$('#hintButton').click(
 						function(hintEvent){
@@ -198,9 +199,8 @@ function play(){
 
 					if(formIsValid === false) {
 						sendPlayerMessage("<p>You're repeating yourself.</p><p>Don't do that.</p>")
-					}
+					};
 					if(formIsValid === true) {
-						submitEvent.preventDefault();
 						$('#hintButton').fadeIn();
 						guessHistory.push(Number(playerGuess));
 						if(checkAnswer.check === true) {
@@ -211,9 +211,9 @@ function play(){
 							let p = $("<p></p>");
 							p.append(checkAnswer.message);
 							$('#playerGuess').prepend(p);	
-						}
+						};
 
-					}
+					};
 
 				});	
 		});
